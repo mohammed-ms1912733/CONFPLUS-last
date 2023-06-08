@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Confrence Schedule</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/schedule-style.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li id="auth-menu"></li>
+      </ul>
+    </nav>
+
+    <header class="schedule-header">
+      <h2>Confrence Schedule</h2>
+      <select id="confDateOptions" onchange="onDateChange(this.value)">
+        <option value="">All</option>
+      </select>
+    </header>
+    <main>
+      <div class="card-list" id="sessionsList"></div>
+    </main>
+    <footer>
+      <hr />
+      <p class="footer">ConfPlus © 2023</p>
+    </footer>
+    <script src="scripts/schedule.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "confplus",
+  "//type": "module --remove // and this comment to run js file directly",
+  "version": "0.1.0",
+  "private": true,
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed":"node prisma/seed.js"
+
+  },
+  "dependencies": {
+    "@prisma/client": "^4.14.0",
+    "@types/node": "20.1.0",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "formidable": "^3.2.5",
+    "next": "^13.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "prisma": "^4.14.0"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+}

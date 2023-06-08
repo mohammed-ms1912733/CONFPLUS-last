@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Submit Paper</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/smallerLogo.png"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <nav>
+      <img src="images/logo.png" alt="" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+    <header><h1>Submit a Paper</h1></header>
+    <main>
+      <form action="#" onsubmit="submitPaper()">
+        <label for="title">Paper title:</label>
+        <input type="text" id="title" name="title" required />
+        <label for="abstract">Abstract:</label>
+        <textarea
+          name="abstract"
+          id="abstract"
+          cols="10"
+          rows="5"
+          required
+        ></textarea>
+
+        <label for="authors">Author(s):</label>
+        <div class="authorsList" id="authorsList"></div>
+        <div>
+          <button type="button" class="button" onclick="onAddAuthor()">
+            Add Author
+          </button>
+        </div>
+        <label for="paperPDF">Paper PDF:</label>
+        <input type="file" name="paperPDF" id="paperPDF" />
+        <input type="submit" value="Submit" class="button" />
+      </form>
+    </main>
+    <footer>
+      <hr />
+      <p class="footer">ConfPlus © 2023</p>
+    </footer>
+    <script src="scripts/submit-paper.js"></script>
+  </body>
+</html>
